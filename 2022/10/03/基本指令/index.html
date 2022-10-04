@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="linux基本命令 1.is命令：是list的缩写，可以看到linux文件夹包含的文件，并且可以看到文件权限，目录信息等eg：ls-a累出目录所有的文件，包含以.开始的隐藏文件。-A累出.及..的其他文件-r反序排列-t 以文件大小排序-S 以文件大小排序-h 以易读大小显示-l除了文件名之外，还将文件的权限、所有者、文件大小等信息详细类出来  2.cd命令：cd&#x2F; 进入要目录cd~进入xxx目录">
+  <meta name="description" content="linux基本命令1.is命令：是list的缩写，可以看到linux文件夹包含的文件，并且可以看到文件权限，目录信息等eg：ls-a累出目录所有的文件，包含以.开始的隐藏文件。-A累出.及..的其他文件-r反序排列-t 以文件大小排序-S 以文件大小排序-h 以易读大小显示-l除了文件名之外，还将文件的权限、所有者、文件大小等信息详细类出来 2.cd命令：进入目录cd&#x2F; 进入要目录cd~进入xxx">
 <meta property="og:type" content="article">
 <meta property="og:title" content="dlbna">
 <meta property="og:url" content="http://example.com/2022/10/03/%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4/index.html">
 <meta property="og:site_name" content="dlbna">
-<meta property="og:description" content="linux基本命令 1.is命令：是list的缩写，可以看到linux文件夹包含的文件，并且可以看到文件权限，目录信息等eg：ls-a累出目录所有的文件，包含以.开始的隐藏文件。-A累出.及..的其他文件-r反序排列-t 以文件大小排序-S 以文件大小排序-h 以易读大小显示-l除了文件名之外，还将文件的权限、所有者、文件大小等信息详细类出来  2.cd命令：cd&#x2F; 进入要目录cd~进入xxx目录">
+<meta property="og:description" content="linux基本命令1.is命令：是list的缩写，可以看到linux文件夹包含的文件，并且可以看到文件权限，目录信息等eg：ls-a累出目录所有的文件，包含以.开始的隐藏文件。-A累出.及..的其他文件-r反序排列-t 以文件大小排序-S 以文件大小排序-h 以易读大小显示-l除了文件名之外，还将文件的权限、所有者、文件大小等信息详细类出来 2.cd命令：进入目录cd&#x2F; 进入要目录cd~进入xxx">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-10-03T06:47:34.375Z">
-<meta property="article:modified_time" content="2022-10-04T11:22:15.633Z">
+<meta property="article:modified_time" content="2022-10-04T12:04:44.327Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
@@ -180,7 +180,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-10-04 19:22:15" itemprop="dateModified" datetime="2022-10-04T19:22:15+08:00">2022-10-04</time>
+                <time title="Modified: 2022-10-04 20:04:44" itemprop="dateModified" datetime="2022-10-04T20:04:44+08:00">2022-10-04</time>
               </span>
 
           
@@ -208,49 +208,51 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="linux基本命令"><a href="#linux基本命令" class="headerlink" title="linux基本命令"></a>linux基本命令</h1><blockquote>
-<p>1.is命令：是list的缩写，可以看到linux文件夹包含的文件，并且可以看到文件权限，目录信息等eg：ls-a<br>累出目录所有的文件，包含以.开始的隐藏文件。<br>-A累出.及..的其他文件<br>-r反序排列<br>-t 以文件大小排序<br>-S 以文件大小排序<br>-h 以易读大小显示<br>-l除了文件名之外，还将文件的权限、所有者、文件大小等信息详细类出来</p>
-<blockquote>
-<p>2.cd命令：<br>cd/ 进入要目录<br>cd~进入xxx目录<br>cd-进入上一次工作路径<br>cd ！￥把上个命令的参数作为cd参数使用</p>
-<blockquote>
-<p>3.pwd命令：命令用于查看当前工作目录路径<br>（1）查看当前路径 pwd<br>（2）pwd -p 查看软链接的实际路径</p>
-<blockquote>
-<p>4.mkdir命令：<br>用于创造文件夹：<br>-m 对新建目录设置存根权限，也可以用chmod命令设置：<br>-p 可以是一个路径名称。此时若路径中的某些目录上不存在，加上此选项后，系统将自动建立<br>好那些尚不存在的目录，记一次可多个目录    </p>
+        <h1 id="linux基本命令"><a href="#linux基本命令" class="headerlink" title="linux基本命令"></a>linux基本命令</h1><h4 id="1-is命令：是list的缩写，可以看到linux文件夹包含的文件，并且可以看到文件权限，目录信息等eg：ls-a"><a href="#1-is命令：是list的缩写，可以看到linux文件夹包含的文件，并且可以看到文件权限，目录信息等eg：ls-a" class="headerlink" title="1.is命令：是list的缩写，可以看到linux文件夹包含的文件，并且可以看到文件权限，目录信息等eg：ls-a"></a>1.is命令：是list的缩写，可以看到linux文件夹包含的文件，并且可以看到文件权限，目录信息等eg：ls-a</h4><p>累出目录所有的文件，包含以.开始的隐藏文件。<br>-A累出.及..的其他文件<br>-r反序排列<br>-t 以文件大小排序<br>-S 以文件大小排序<br>-h 以易读大小显示<br>-l除了文件名之外，还将文件的权限、所有者、文件大小等信息详细类出来</p>
+<h4 id="2-cd命令：进入目录"><a href="#2-cd命令：进入目录" class="headerlink" title="2.cd命令：进入目录"></a>2.cd命令：进入目录</h4><p>cd/ 进入要目录<br>cd~进入xxx目录<br>cd-进入上一次工作路径<br>cd ！￥把上个命令的参数作为cd参数使用</p>
+<h4 id="3-pwd命令：命令用于查看当前工作目录路径"><a href="#3-pwd命令：命令用于查看当前工作目录路径" class="headerlink" title="3.pwd命令：命令用于查看当前工作目录路径"></a>3.pwd命令：命令用于查看当前工作目录路径</h4><p>（1）查看当前路径 pwd<br>（2）pwd -p 查看软链接的实际路径</p>
+<h4 id="4-mkdir命令：用于创造文件夹："><a href="#4-mkdir命令：用于创造文件夹：" class="headerlink" title="4.mkdir命令：用于创造文件夹："></a>4.mkdir命令：用于创造文件夹：</h4><p>-m 对新建目录设置存根权限，也可以用chmod命令设置：<br>-p 可以是一个路径名称。此时若路径中的某些目录上不存在，加上此选项后，系统将自动建立<br>好那些尚不存在的目录，记一次可多个目录    </p>
 <p>mkdir t 可以在当前目录下创建为t的文件夹mkdir -p /tmp/test/t1/t            </p>
 <p>mkdir t 生成的文件带锁，所以需要chmod +777 t 来将他的所给去掉</p>
-<blockquote>
-<p>5.rmdir命令：</p>
-<p>可以删除空目录，不可删非空目录</p>
-<blockquote>
-<p>6.rm </p>
-<p>rm -i *.log 删除任何一个.log文件，删除前逐一询问确认： rm -i *.log</p>
+<h4 id="5-rmdir命令：可以删除空目录，不可删非空目录"><a href="#5-rmdir命令：可以删除空目录，不可删非空目录" class="headerlink" title="5.rmdir命令：可以删除空目录，不可删非空目录"></a>5.rmdir命令：可以删除空目录，不可删非空目录</h4><h4 id="6-rm"><a href="#6-rm" class="headerlink" title="6.rm"></a>6.rm</h4><p>rm -i *.log 删除任何一个.log文件，删除前逐一询问确认： rm -i *.log</p>
 <p>rm -rf test 删除test子目录及子目录中所有档案删除，并且不用一一确认。</p>
 <p>删除以rm – -f*开头的文件，不能是目录</p>
 <p>注：[rm与rmdir有什么区别_百度知道 (baidu.com)](<a target="_blank" rel="noopener" href="https://zhidao.baidu.com/question/115911458.html#:~:text=rmdir%E5%91%BD%E4%BB%A4%E6%98%AF%E7%94%A8%E6%9D%A5%E5%88%A0%E9%99%A4%E7%A9%BA%E7%9A%84%E7%9B%AE%E5%BD%95%EF%BC%8Crm%E5%91%BD%E4%BB%A4%E6%98%AF%E7%94%A8%E6%9D%A5%E5%88%A0%E9%99%A4%E9%9D%9E%E7%A9%BA%E7%9A%84%E7%9B%AE%E5%BD%95%E3%80%82">https://zhidao.baidu.com/question/115911458.html#:~:text=rmdir命令是用来删除空的目录，rm命令是用来删除非空的目录。</a> Linux中rmdir命令是用来删除空的目录。 参数：,-p 是当子目录被删除后使它也成为空目录的话，则顺便一并删除。 删除名字为folder1的子目录。 如果想删除非空目录，要使用rm才可以。)</p>
-<blockquote>
-<p>7.mv</p>
-<p>mv test.log test1.txt  :将test.log改为test1.txt</p>
+<h4 id="7-mv"><a href="#7-mv" class="headerlink" title="7.mv"></a>7.mv</h4><p>mv test.log test1.txt  :将test.log改为test1.txt</p>
 <p>mv -i log1.txt log2.txt  log3.txt ：将文件log1.txt 2 3 移动到根的test3目录中</p>
 <p>mv -i log1.txt log2.txt 将文件</p>
 <p>mv * ../不是很理解。。。</p>
-<blockquote>
-<p>8.cp命令</p>
-<p>cp -i 提示</p>
+<h4 id="8-cp命令"><a href="#8-cp命令" class="headerlink" title="8.cp命令"></a>8.cp命令</h4><p>cp -i 提示</p>
 <p>cp -r复制目录及目录内所有项目</p>
 <p>cp -a 复制的文件与原文件时间一样???</p>
-<blockquote>
-<p>9.cat命令</p>
-<p>一次显示整个文件：cat filename</p>
+<h4 id="9-cat命令"><a href="#9-cat命令" class="headerlink" title="9.cat命令"></a>9.cat命令</h4><p>一次显示整个文件：cat filename</p>
 <p>从键盘创造一个文件：cat &gt; filename</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
+<p>将几个文件合并成一个文件：cat file1 file2 &gt; flie</p>
+<p>-b 对非空输出行号</p>
+<p>-n 输出所有行号</p>
+<h5 id="实例：-1-cat-n-log2012-log-log2013-log"><a href="#实例：-1-cat-n-log2012-log-log2013-log" class="headerlink" title="实例： 1.cat -n log2012.log  log2013.log"></a>实例： 1.cat -n log2012.log  log2013.log</h5><p>是把log2012.log的文件内容加上行号后输入log2013.log这个文件里</p>
+<h5 id="2-cat-b-log2012-log-log2013-log-log-log"><a href="#2-cat-b-log2012-log-log2013-log-log-log" class="headerlink" title="2.cat -b log2012.log log2013.log log.log"></a>2.cat -b log2012.log log2013.log log.log</h5><p>是将log2012.log和log2013.log 的文件加上行号（空白行不加）之后将内容附加到log.log里</p>
+<h5 id="3-cat-gt-log-txt-lt-lt-EOF"><a href="#3-cat-gt-log-txt-lt-lt-EOF" class="headerlink" title="3.cat &gt;log.txt &lt;&lt;EOF"></a>3.cat &gt;log.txt &lt;&lt;EOF</h5><p>#&gt;hello</p>
+<p>#&gt;world</p>
+<p>#&gt;PWD=$(pwd)</p>
+<p>#&gt;EOF</p>
+<p>ls -l log.txt</p>
+<p>cat log.txt</p>
+<p>Hello</p>
+<p>World</p>
+<p>PWD=/opt/soft/test   使用here doc 生成新文件</p>
+<h5 id="4-反向实例"><a href="#4-反向实例" class="headerlink" title="4.反向实例"></a>4.反向实例</h5><p>？？？？？？啥意思</p>
+<p>tac log.txt </p>
+<p>PWD=/opt/soft/test</p>
+<p>World</p>
+<p>Hello</p>
+<h4 id="10-more命令：类似于cat，"><a href="#10-more命令：类似于cat，" class="headerlink" title="10.more命令：类似于cat，"></a>10.more命令：类似于cat，</h4><p>more命令会以一页一页的显示方式方便使用者逐页阅读，而最基本的指令就是按空白键（空格键）就往下一样显示b见就会往回一页显示</p>
+<h5 id="命令参数"><a href="#命令参数" class="headerlink" title="命令参数"></a>命令参数</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">+n      从笫 n 行开始显示</span><br><span class="line">-n       定义屏幕大小为n行</span><br><span class="line">+/pattern 在每个档案显示前搜寻该字串（pattern），然后从该字串前两行之后开始显示 </span><br><span class="line">-c       从顶部清屏，然后显示</span><br><span class="line">-d       提示“Press space to continue，’q’ to quit（按空格键继续，按q键退出）”，禁用响铃功能</span><br><span class="line">-l        忽略Ctrl+l（换页）字符</span><br><span class="line">-p       通过清除窗口而不是滚屏来对文件进行换页，与-c选项相似</span><br><span class="line">-s       把连续的多个空行显示为一行</span><br><span class="line">-u       把文件内容中的下画线去掉-d       提示“Press space to continue，’q’ to quit（按空格键继续，按q键退出）”，禁用响铃功能</span><br><span class="line">-l        忽略Ctrl+l（换页）字符</span><br><span class="line">-p       通过清除窗口而不是滚屏来对文件进行换页，与-c选项相似</span><br><span class="line">-s       把连续的多个空行显示为一行</span><br><span class="line">-u       把文件内容中的下画线去掉</span><br></pre></td></tr></table></figure>
+
+<h5 id="常用操作命令"><a href="#常用操作命令" class="headerlink" title="常用操作命令"></a>常用操作命令</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Enter    向下 n 行，需要定义。默认为 1 行</span><br><span class="line">Ctrl+F   向下滚动一屏</span><br><span class="line">空格键  向下滚动一屏</span><br><span class="line">Ctrl+B  返回上一屏</span><br><span class="line">=       输出当前行的行号</span><br><span class="line">:f     输出文件名和当前行的行号</span><br><span class="line">V      调用vi编辑器</span><br><span class="line">!命令   调用Shell，并执行命令</span><br><span class="line">q       退出more</span><br></pre></td></tr></table></figure>
+
+<h5 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h5><p>1.more +3 text.txt  显示文件中从第三行起的内容。</p>
+<p>2.ls -1|more -5 再所列出目录详细信息，借助管道是每次显示五行，按空格·显示下五行</p>
 
     </div>
 
@@ -352,7 +354,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4"><span class="nav-number">1.</span> <span class="nav-text">linux基本命令</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4"><span class="nav-number">1.</span> <span class="nav-text">linux基本命令</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-is%E5%91%BD%E4%BB%A4%EF%BC%9A%E6%98%AFlist%E7%9A%84%E7%BC%A9%E5%86%99%EF%BC%8C%E5%8F%AF%E4%BB%A5%E7%9C%8B%E5%88%B0linux%E6%96%87%E4%BB%B6%E5%A4%B9%E5%8C%85%E5%90%AB%E7%9A%84%E6%96%87%E4%BB%B6%EF%BC%8C%E5%B9%B6%E4%B8%94%E5%8F%AF%E4%BB%A5%E7%9C%8B%E5%88%B0%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90%EF%BC%8C%E7%9B%AE%E5%BD%95%E4%BF%A1%E6%81%AF%E7%AD%89eg%EF%BC%9Als-a"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">1.is命令：是list的缩写，可以看到linux文件夹包含的文件，并且可以看到文件权限，目录信息等eg：ls-a</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-cd%E5%91%BD%E4%BB%A4%EF%BC%9A%E8%BF%9B%E5%85%A5%E7%9B%AE%E5%BD%95"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">2.cd命令：进入目录</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-pwd%E5%91%BD%E4%BB%A4%EF%BC%9A%E5%91%BD%E4%BB%A4%E7%94%A8%E4%BA%8E%E6%9F%A5%E7%9C%8B%E5%BD%93%E5%89%8D%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95%E8%B7%AF%E5%BE%84"><span class="nav-number">1.0.0.3.</span> <span class="nav-text">3.pwd命令：命令用于查看当前工作目录路径</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-mkdir%E5%91%BD%E4%BB%A4%EF%BC%9A%E7%94%A8%E4%BA%8E%E5%88%9B%E9%80%A0%E6%96%87%E4%BB%B6%E5%A4%B9%EF%BC%9A"><span class="nav-number">1.0.0.4.</span> <span class="nav-text">4.mkdir命令：用于创造文件夹：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-rmdir%E5%91%BD%E4%BB%A4%EF%BC%9A%E5%8F%AF%E4%BB%A5%E5%88%A0%E9%99%A4%E7%A9%BA%E7%9B%AE%E5%BD%95%EF%BC%8C%E4%B8%8D%E5%8F%AF%E5%88%A0%E9%9D%9E%E7%A9%BA%E7%9B%AE%E5%BD%95"><span class="nav-number">1.0.0.5.</span> <span class="nav-text">5.rmdir命令：可以删除空目录，不可删非空目录</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-rm"><span class="nav-number">1.0.0.6.</span> <span class="nav-text">6.rm</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-mv"><span class="nav-number">1.0.0.7.</span> <span class="nav-text">7.mv</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-cp%E5%91%BD%E4%BB%A4"><span class="nav-number">1.0.0.8.</span> <span class="nav-text">8.cp命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9-cat%E5%91%BD%E4%BB%A4"><span class="nav-number">1.0.0.9.</span> <span class="nav-text">9.cat命令</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%AE%9E%E4%BE%8B%EF%BC%9A-1-cat-n-log2012-log-log2013-log"><span class="nav-number">1.0.0.9.1.</span> <span class="nav-text">实例： 1.cat -n log2012.log  log2013.log</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-cat-b-log2012-log-log2013-log-log-log"><span class="nav-number">1.0.0.9.2.</span> <span class="nav-text">2.cat -b log2012.log log2013.log log.log</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-cat-gt-log-txt-lt-lt-EOF"><span class="nav-number">1.0.0.9.3.</span> <span class="nav-text">3.cat &gt;log.txt &lt;&lt;EOF</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-%E5%8F%8D%E5%90%91%E5%AE%9E%E4%BE%8B"><span class="nav-number">1.0.0.9.4.</span> <span class="nav-text">4.反向实例</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#10-more%E5%91%BD%E4%BB%A4%EF%BC%9A%E7%B1%BB%E4%BC%BC%E4%BA%8Ecat%EF%BC%8C"><span class="nav-number">1.0.0.10.</span> <span class="nav-text">10.more命令：类似于cat，</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%91%BD%E4%BB%A4%E5%8F%82%E6%95%B0"><span class="nav-number">1.0.0.10.1.</span> <span class="nav-text">命令参数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4"><span class="nav-number">1.0.0.10.2.</span> <span class="nav-text">常用操作命令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%AE%9E%E4%BE%8B"><span class="nav-number">1.0.0.10.3.</span> <span class="nav-text">实例</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
